@@ -2,10 +2,12 @@ class Population
   def initialize(params={})
     @key  = params[:key]
     @year = params[:year]
+    @get  = params[:get]
+    @for  = params[:for]
   end
 
   def url
-    "http://api.census.gov/data/#{@year}/?key=#{@key}"
+    "http://api.census.gov/data/#{@year}/sf1?key=#{@key}&get=#{@get}&for=#{@for}"
   end
 
 
