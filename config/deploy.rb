@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, "moar-better-census-api"
 set :repository,  "git@github.com:integrum/moar-better-census-api.git"
 
