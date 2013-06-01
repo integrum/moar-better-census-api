@@ -2,8 +2,8 @@ class Population
   def initialize(params={})
     @key  = params[:key]
     @year = params[:year]
-    @get  = params[:get]
-    @for  = params[:for]
+    @get  = params[:get] || 'P0010001,NAME'
+    @for  = params[:for] || 'state:*'
   end
 
   def url
