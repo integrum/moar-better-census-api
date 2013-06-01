@@ -37,3 +37,15 @@ gem 'capistrano', group: :development
 
 # To use debugger
 # gem 'debugger'
+
+group :development, :test do
+  gem 'guard', :require => false
+  gem 'guard-shell', :require => false
+  gem 'guard-rspec', :require => false
+  gem 'listen', :require => false
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+  gem 'guard-rails', :require => false
+  gem 'guard-bundler', :require => false
+end
