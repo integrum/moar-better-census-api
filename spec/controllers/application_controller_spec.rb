@@ -10,7 +10,7 @@ describe ApplicationController do
       end
 
       it "should return a 401" do
-        @response.status.should == 401
+        response.status.should == 401
       end
     end
 

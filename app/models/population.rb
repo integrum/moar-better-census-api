@@ -8,5 +8,9 @@ class Population
     "http://api.census.gov/data/#{@year}/?key=#{@key}"
   end
 
+  def to_json(options={})
+    {}
+  end
+
 
 end
